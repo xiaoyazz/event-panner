@@ -1,1 +1,1 @@
-# event-panner
+# event-planner
