@@ -24,7 +24,7 @@ class WeatherViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Call API Key for Toronto
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=43.651070&lon=-79.34&appid=84f4dde0ea6a0bf2e3864301871f625e&units=metric") else { return }
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=43.651070&lon=-79.34&units=metric&appid=84f4dde0ea6a0bf2e3864301871f625e") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
@@ -37,7 +37,7 @@ class WeatherViewController: UIViewController {
                     
                     let temp = Int(weatherMain["temp"] as? Double ?? 0)
                     
-                    let description = (weatherDetails.first?["description"] as? String)?.capitalizingFirstLetter()
+                    let description = (weatherDetails.first?["main"] as? String)?.capitalizingFirstLetter()
                     
                     DispatchQueue.main.async {
                         self.setWeather(weather: weatherDetails.first?["main"] as? String, description: description, temp : temp)
