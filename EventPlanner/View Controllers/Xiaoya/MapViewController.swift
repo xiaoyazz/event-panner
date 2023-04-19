@@ -3,6 +3,8 @@
 //  EventPlanner
 //
 //  Created by Xiaoya Zou (991617988) on 2023-04-02.
+//  This is the map view controller to provide a mapview for user to search the party location
+//  User can enter an address to drop a pin and check the route
 //
 
 import UIKit
