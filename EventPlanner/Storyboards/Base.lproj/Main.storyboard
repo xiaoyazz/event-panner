@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -59,7 +59,7 @@
             <objects>
                 <viewController id="5St-Wf-JDI" customClass="RegisterViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQI-XL-9KB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-oF-Wsa">
@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="gIi-sm-FJz" customClass="EventCreationViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pi3-rf-UKV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7a-Ss-Lte">
@@ -115,7 +115,7 @@
             <objects>
                 <viewController id="LW0-sw-9cN" customClass="EventHistoryViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5H-Co-kHD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-Df-JnC">
@@ -150,7 +150,7 @@
             <objects>
                 <viewController id="R5l-Ni-XEB" customClass="MapViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEC-0v-49j">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZW-2l-5Nr">
@@ -214,7 +214,7 @@
             <objects>
                 <viewController id="dGy-9C-JPU" customClass="ProfileViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vrX-wS-jYn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6r-XP-ZDC">
@@ -250,7 +250,7 @@
             <objects>
                 <viewController id="CFV-Sh-Zfw" customClass="HomeViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4yF-NN-YeH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMa-qz-RMi">
@@ -270,6 +270,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jinling Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yg4-xt-5Xz">
+                                <rect key="frame" x="136" y="200" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K07-Zk-Lbx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -278,14 +285,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLx-aD-Ttl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3244.6153846153843" y="-546.6824644549763"/>
+            <point key="canvasLocation" x="3244" y="-546.79802955665025"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="aWL-Nv-Oe7">
             <objects>
                 <viewController id="IjB-p3-2EL" customClass="EventDetailsViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="njb-pX-DWc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewc-al-a8M">
