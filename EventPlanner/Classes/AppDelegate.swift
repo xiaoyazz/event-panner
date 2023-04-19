@@ -7,16 +7,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var UdatabaseName : String? = "Users.db"
     var UdatabasePath : String?
     var people : [User] = []
+
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let documentPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let documentsDir = documentPaths[0]
         UdatabasePath = documentsDir.appending("/" + UdatabaseName!)
-               
+        PdatabasePath = documentsDir.appending("/" + PdatabaseName!)
         checkAndCreateUserDatabase()
+        checkAndCreateProfileDatabase()
         readDataFromUserDatabase()
-                
+        readDataFromProfileDatabase()
         return true
     }
 
@@ -24,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var success = false
         let fileManager = FileManager.default
            
-        success = fileManager.fileExists(atPath: UdatabasePath!)
+        success = fileManager.fileExists(atPath: UdatabaseName!)
        
         if success {
             return
@@ -134,10 +136,82 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
     }
+    func signOut() {
+        setCurrentEmail(sentEmail: nil)
+    }
     
+    //-------------------MOEEZ-----------------
+    var PdatabaseName : String? = "Profile.db"
+    var PdatabasePath : String?
+    var profiles : [Profile] = []
+    var currentUserEmail : String?
     
-    
+    func setCurrentEmail(sentEmail: String?){
+        currentUserEmail = sentEmail
+    }
+    func checkAndCreateProfileDatabase() {
+        var success = false
+        let fileManager = FileManager.default
+           
+        success = fileManager.fileExists(atPath: PdatabaseName!)
+       
+        if success {
+            return
+        }
+        
+        let databasePathFromApp = Bundle.main.resourcePath?.appending("/" + PdatabaseName!)
 
+        try? fileManager.copyItem(atPath: databasePathFromApp!, toPath: PdatabasePath!)
+       
+        return;
+    }
+    
+    func readDataFromProfileDatabase() {
+        profiles.removeAll()
+           
+        var db: OpaquePointer? = nil
+               
+        if sqlite3_open(self.PdatabasePath, &db) == SQLITE_OK {
+            print("Successfully opened connection to database at \(self.PdatabasePath)")
+                   
+            var queryStatement: OpaquePointer? = nil
+            var queryStatementString : String = "select * from profile"
+                
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+                       
+                while( sqlite3_step(queryStatement) == SQLITE_ROW ) {
+                    
+                   let id: Int = Int(sqlite3_column_int(queryStatement, 0))
+                    let cPic = sqlite3_column_text(queryStatement, 1)
+                    let cName = sqlite3_column_text(queryStatement, 2)
+                    let cEmail = sqlite3_column_text(queryStatement, 3)
+                    let cBio = sqlite3_column_text(queryStatement, 4)
+                    
+                    
+                    let pic = String(cString: cPic!)
+                    let name = String(cString: cName!)
+                    let email = String(cString: cEmail!)
+                    let bio = String(cString: cBio!)
+                    
+                    let profile : Profile = Profile.init()
+                    profile.initWithData(id: id, pic: pic,name: name,email: email,bio: bio)
+                    profiles.append(profile)
+                }
+
+            sqlite3_finalize(queryStatement)
+            } else {
+                print("SELECT statement could not be prepared")
+            }
+                   
+        sqlite3_close(db);
+
+        } else {
+            print("Unable to open database.")
+        }
+    }
+    
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

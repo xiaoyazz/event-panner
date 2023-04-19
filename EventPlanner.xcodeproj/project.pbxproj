@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D16E20F29F039A600D1306E /* Users.db in Resources */ = {isa = PBXBuildFile; fileRef = 5D16E20E29F039A600D1306E /* Users.db */; };
+		5D16E21129F03DAD00D1306E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16E21029F03DAD00D1306E /* Profile.swift */; };
+		5D16E21329F0464300D1306E /* joe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D16E21229F0464300D1306E /* joe.jpg */; };
+		5D16E21529F04EA900D1306E /* Profile.db in Resources */ = {isa = PBXBuildFile; fileRef = 5D16E21429F04EA900D1306E /* Profile.db */; };
+		5D16E21829F06B3000D1306E /* phoebe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D16E21629F06B3000D1306E /* phoebe.jpg */; };
+		5D16E21929F06B3000D1306E /* ross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D16E21729F06B3000D1306E /* ross.jpg */; };
 		5DC4DE5F29D947AF001704F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE5E29D947AF001704F9 /* AppDelegate.swift */; };
 		5DC4DE6129D947AF001704F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE6029D947AF001704F9 /* SceneDelegate.swift */; };
 		5DC4DE6329D947AF001704F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE6229D947AF001704F9 /* ViewController.swift */; };
@@ -26,10 +32,15 @@
 		FD4FBCAA29EF8B1000EBD5C9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FBCA929EF8B0500EBD5C9 /* libsqlite3.0.tbd */; };
 		FD4FBCAB29EF8B1000EBD5C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FBCA829EF8B0500EBD5C9 /* libsqlite3.tbd */; };
 		FD4FBCAD29EF8B2400EBD5C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FBCAC29EF8B2400EBD5C9 /* User.swift */; };
-		FD4FBCAF29EF8DD400EBD5C9 /* Users.db in Resources */ = {isa = PBXBuildFile; fileRef = FD4FBCAE29EF8DD400EBD5C9 /* Users.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D16E20E29F039A600D1306E /* Users.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Users.db; sourceTree = "<group>"; };
+		5D16E21029F03DAD00D1306E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5D16E21229F0464300D1306E /* joe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joe.jpg; sourceTree = "<group>"; };
+		5D16E21429F04EA900D1306E /* Profile.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Profile.db; sourceTree = "<group>"; };
+		5D16E21629F06B3000D1306E /* phoebe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phoebe.jpg; sourceTree = "<group>"; };
+		5D16E21729F06B3000D1306E /* ross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ross.jpg; sourceTree = "<group>"; };
 		5DC4DE5B29D947AF001704F9 /* EventPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC4DE5E29D947AF001704F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC4DE6029D947AF001704F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +62,6 @@
 		FD4FBCA829EF8B0500EBD5C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FD4FBCA929EF8B0500EBD5C9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FD4FBCAC29EF8B2400EBD5C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FD4FBCAE29EF8DD400EBD5C9 /* Users.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Users.db; path = ../../../../Downloads/Users.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 				5DC4DE5E29D947AF001704F9 /* AppDelegate.swift */,
 				5DC4DE6029D947AF001704F9 /* SceneDelegate.swift */,
 				FD4FBCAC29EF8B2400EBD5C9 /* User.swift */,
+				5D16E21029F03DAD00D1306E /* Profile.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -113,7 +124,8 @@
 		5DC4DE7429D94865001704F9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				FD4FBCAE29EF8DD400EBD5C9 /* Users.db */,
+				5D16E21429F04EA900D1306E /* Profile.db */,
+				5D16E20E29F039A600D1306E /* Users.db */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -133,6 +145,9 @@
 		5DC4DE7629D94887001704F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5D16E21629F06B3000D1306E /* phoebe.jpg */,
+				5D16E21729F06B3000D1306E /* ross.jpg */,
+				5D16E21229F0464300D1306E /* joe.jpg */,
 				5DC4DE7D29D94B9F001704F9 /* load.png */,
 			);
 			path = Images;
@@ -265,10 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D16E21329F0464300D1306E /* joe.jpg in Resources */,
 				5DC4DE6B29D947B1001704F9 /* LaunchScreen.storyboard in Resources */,
 				5DC4DE6829D947B1001704F9 /* Assets.xcassets in Resources */,
 				5DC4DE6629D947AF001704F9 /* Main.storyboard in Resources */,
-				FD4FBCAF29EF8DD400EBD5C9 /* Users.db in Resources */,
+				5D16E21929F06B3000D1306E /* ross.jpg in Resources */,
+				5D16E21829F06B3000D1306E /* phoebe.jpg in Resources */,
+				5D16E21529F04EA900D1306E /* Profile.db in Resources */,
+				5D16E20F29F039A600D1306E /* Users.db in Resources */,
 				5DC4DE7E29D94B9F001704F9 /* load.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +302,7 @@
 				5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */,
 				5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */,
 				5DC4DE8029D94E2D001704F9 /* LoginViewController.swift in Sources */,
+				5D16E21129F03DAD00D1306E /* Profile.swift in Sources */,
 				5DC4DE8829D94EC9001704F9 /* EventDetailsViewController.swift in Sources */,
 				B25C1E2E29EFB729008B76CB /* WeatherViewController.swift in Sources */,
 				5DC4DE8229D94E48001704F9 /* RegisterViewController.swift in Sources */,

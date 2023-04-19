@@ -11,7 +11,9 @@ class LoginViewController: UIViewController {
         let canLogin = mainDelegate.userExists(userEmail: tfEmail.text!, userPassword: tfPassword.text!)
         
         if (canLogin) {
-            print("can log in")
+            print("Successfully log in")
+            mainDelegate.setCurrentEmail(sentEmail: tfEmail.text)
+            
             btnLogn.isEnabled = true
         } else {
             btnLogn.isEnabled = false
@@ -22,21 +24,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnLogn.isEnabled = false
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func unwindToLoginViewController(sender: UIStoryboardSegue){
         
+            let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+            mainDelegate.setCurrentEmail(sentEmail: nil)
+        tfEmail.text=""
+           tfPassword.text=""
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

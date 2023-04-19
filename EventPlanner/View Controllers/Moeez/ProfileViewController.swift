@@ -9,21 +9,39 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    
+    @IBOutlet weak var profilePictureImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var bioTextView: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+        let email = mainDelegate.currentUserEmail
+        mainDelegate.readDataFromProfileDatabase()
+        
+        for profile in mainDelegate.profiles {
+            if profile.email == email {
+                // Email Found
+                let name = profile.name
+                profilePictureImageView.image = UIImage(named: profile.pic ?? "default.jpg")
+                        nameLabel.text = profile.name
+                        emailLabel.text = profile.email
+                        bioTextView.text = profile.bio
+                break // Exit the loop since we found the profile
+            }
+        }
+        
 
-        // Do any additional setup after loading the view.
+
+        
+        profilePictureImageView.layer.cornerRadius = profilePictureImageView.bounds.width / 2
+        profilePictureImageView.clipsToBounds = true
+
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

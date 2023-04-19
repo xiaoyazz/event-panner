@@ -9,7 +9,6 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func submitInfo(sender : Any) {
@@ -21,26 +20,17 @@ class RegisterViewController: UIViewController {
          
         let returnCode : Bool = mainDelegate.insertIntoUserDatabase(person: person)
          
-        var returnMSG : String = "User Added"
+        var returnMSG : String = "Account has been registered."
          
         if returnCode == false {
-            returnMSG = "User Could not be Created"
+            returnMSG = " but unfortunally sign up failed."
         }
         
-        let alert = UIAlertController(title: "Thank you", message: returnMSG, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Thank you ", message: returnMSG, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
