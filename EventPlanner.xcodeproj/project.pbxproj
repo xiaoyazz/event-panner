@@ -25,6 +25,11 @@
 		B270527F29EF6948000A416B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270527E29EF6948000A416B /* CoreLocation.framework */; };
 		B270528129EF6953000A416B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270528029EF6953000A416B /* MapKit.framework */; };
 		B270528329EF8C9F000A416B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270528229EF8C9F000A416B /* WeatherViewController.swift */; };
+		B3B75E8229EF9B9900997F49 /* party_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8129EF9B9800997F49 /* party_image.jpg */; };
+		B3B75E8729EFAE3F00997F49 /* coco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8329EFAE3F00997F49 /* coco.jpg */; };
+		B3B75E8829EFAE3F00997F49 /* sparkle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8429EFAE3F00997F49 /* sparkle.jpg */; };
+		B3B75E8929EFAE3F00997F49 /* flamingo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8529EFAE3F00997F49 /* flamingo.jpg */; };
+		B3B75E8A29EFAE3F00997F49 /* wine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8629EFAE3F00997F49 /* wine.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		B270527E29EF6948000A416B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B270528029EF6953000A416B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B270528229EF8C9F000A416B /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		B3B75E8129EF9B9800997F49 /* party_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = party_image.jpg; sourceTree = "<group>"; };
+		B3B75E8329EFAE3F00997F49 /* coco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coco.jpg; sourceTree = "<group>"; };
+		B3B75E8429EFAE3F00997F49 /* sparkle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sparkle.jpg; sourceTree = "<group>"; };
+		B3B75E8529EFAE3F00997F49 /* flamingo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flamingo.jpg; sourceTree = "<group>"; };
+		B3B75E8629EFAE3F00997F49 /* wine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wine.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,11 @@
 		5DC4DE7629D94887001704F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B3B75E8329EFAE3F00997F49 /* coco.jpg */,
+				B3B75E8529EFAE3F00997F49 /* flamingo.jpg */,
+				B3B75E8429EFAE3F00997F49 /* sparkle.jpg */,
+				B3B75E8629EFAE3F00997F49 /* wine.jpg */,
+				B3B75E8129EF9B9800997F49 /* party_image.jpg */,
 				5DC4DE7D29D94B9F001704F9 /* load.png */,
 			);
 			path = Images;
@@ -259,7 +274,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B75E8929EFAE3F00997F49 /* flamingo.jpg in Resources */,
+				B3B75E8229EF9B9900997F49 /* party_image.jpg in Resources */,
+				B3B75E8729EFAE3F00997F49 /* coco.jpg in Resources */,
 				5DC4DE6B29D947B1001704F9 /* LaunchScreen.storyboard in Resources */,
+				B3B75E8A29EFAE3F00997F49 /* wine.jpg in Resources */,
+				B3B75E8829EFAE3F00997F49 /* sparkle.jpg in Resources */,
 				5DC4DE6829D947B1001704F9 /* Assets.xcassets in Resources */,
 				5DC4DE6629D947AF001704F9 /* Main.storyboard in Resources */,
 				5DC4DE7E29D94B9F001704F9 /* load.png in Resources */,

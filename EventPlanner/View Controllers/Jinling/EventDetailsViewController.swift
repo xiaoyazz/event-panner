@@ -6,14 +6,72 @@
 //
 
 import UIKit
+import CoreImage
 
 class EventDetailsViewController: UIViewController {
 
+    @IBOutlet weak var qrCodeImageView: UIImageView!
+    @IBOutlet weak var lblWhen: UILabel!
+    @IBOutlet weak var lblWhere: UILabel!
+    @IBOutlet weak var lblHost: UILabel!
+    @IBOutlet weak var lblTheme: UILabel!
+    @IBOutlet weak var lblEventTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    // QR Code with an URL
+    func generateQRCode(from string: String) -> UIImage? {
+            let data = string.data(using: String.Encoding.ascii)
+            guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
+            qrFilter.setValue(data, forKey: "inputMessage")
+            qrFilter.setValue("Q", forKey: "inputCorrectionLevel")
+            
+            guard let qrImage = qrFilter.outputImage else { return nil }
+            
+            let scaleX = qrCodeImageView.frame.size.width / qrImage.extent.size.width
+            let scaleY = qrCodeImageView.frame.size.height / qrImage.extent.size.height
+            let transformedImage = qrImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+            
+            return UIImage(ciImage: transformedImage)
+        }
+        
+        func displayQRCode() {
+            let qrCodeString = "https://www.example.com"
+            guard let qrCodeImage = generateQRCode(from: qrCodeString) else { return }
+            qrCodeImageView.image = qrCodeImage
+        }
+    
+    @IBAction func generateQRCodeButtonTapped(_ sender: UIButton) {
+        displayQRCode2()
+    }
+    
+    // QR CODE with event details
+    func generateQRCode2(from string: String, size: CGFloat) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
+        guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
+        qrFilter.setValue(data, forKey: "inputMessage")
+        qrFilter.setValue("Q", forKey: "inputCorrectionLevel")
+        
+        guard let qrImage = qrFilter.outputImage else { return nil }
+        
+        let scaleX = size / qrImage.extent.size.width
+        let scaleY = size / qrImage.extent.size.height
+        let transformedImage = qrImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+        
+        return UIImage(ciImage: transformedImage)
+    }
+
+    func displayQRCode2() {
+        let qrCodeString = "You are invited to \(lblEventTitle.text ?? "")\nDate and time: \(lblWhen.text ?? "")\nLocation: \(lblWhere.text ?? "")\nHosted By: \(lblHost.text ?? "")\nTheme: \(lblTheme.text ?? "")"
+        guard let qrCodeImage = generateQRCode2(from: qrCodeString, size: 250.0) else { return }
+        qrCodeImageView.image = qrCodeImage
+    }
+
+    
     
 
     /*
