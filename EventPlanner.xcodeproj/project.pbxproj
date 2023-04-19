@@ -22,6 +22,7 @@
 		5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE8C29D94F1C001704F9 /* EventCreationViewController.swift */; };
 		5DC4DE9029D94F3D001704F9 /* EventHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */; };
 		5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE9129D94F4D001704F9 /* MapViewController.swift */; };
+		B25C1E2E29EFB729008B76CB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25C1E2D29EFB728008B76CB /* WeatherViewController.swift */; };
 		FD4FBCAA29EF8B1000EBD5C9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FBCA929EF8B0500EBD5C9 /* libsqlite3.0.tbd */; };
 		FD4FBCAB29EF8B1000EBD5C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FBCA829EF8B0500EBD5C9 /* libsqlite3.tbd */; };
 		FD4FBCAD29EF8B2400EBD5C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4FBCAC29EF8B2400EBD5C9 /* User.swift */; };
@@ -46,6 +47,7 @@
 		5DC4DE8C29D94F1C001704F9 /* EventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCreationViewController.swift; sourceTree = "<group>"; };
 		5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHistoryViewController.swift; sourceTree = "<group>"; };
 		5DC4DE9129D94F4D001704F9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B25C1E2D29EFB728008B76CB /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		FD4FBCA829EF8B0500EBD5C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FD4FBCA929EF8B0500EBD5C9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FD4FBCAC29EF8B2400EBD5C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -182,9 +184,9 @@
 		5DC4DE8E29D94F24001704F9 /* Xiaoya */ = {
 			isa = PBXGroup;
 			children = (
+				B25C1E2D29EFB728008B76CB /* WeatherViewController.swift */,
 				5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */,
 				5DC4DE9129D94F4D001704F9 /* MapViewController.swift */,
-				B270528229EF8C9F000A416B /* WeatherViewController.swift */,
 			);
 			path = Xiaoya;
 			sourceTree = "<group>";
@@ -279,10 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */,
-				B270528329EF8C9F000A416B /* WeatherViewController.swift in Sources */,
 				5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */,
 				5DC4DE8029D94E2D001704F9 /* LoginViewController.swift in Sources */,
 				5DC4DE8829D94EC9001704F9 /* EventDetailsViewController.swift in Sources */,
+				B25C1E2E29EFB729008B76CB /* WeatherViewController.swift in Sources */,
 				5DC4DE8229D94E48001704F9 /* RegisterViewController.swift in Sources */,
 				5DC4DE6329D947AF001704F9 /* ViewController.swift in Sources */,
 				5DC4DE5F29D947AF001704F9 /* AppDelegate.swift in Sources */,
