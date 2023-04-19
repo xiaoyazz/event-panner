@@ -184,6 +184,7 @@
 			children = (
 				5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */,
 				5DC4DE9129D94F4D001704F9 /* MapViewController.swift */,
+				B270528229EF8C9F000A416B /* WeatherViewController.swift */,
 			);
 			path = Xiaoya;
 			sourceTree = "<group>";
@@ -278,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */,
+				B270528329EF8C9F000A416B /* WeatherViewController.swift in Sources */,
 				5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */,
 				5DC4DE8029D94E2D001704F9 /* LoginViewController.swift in Sources */,
 				5DC4DE8829D94EC9001704F9 /* EventDetailsViewController.swift in Sources */,
@@ -440,6 +442,7 @@
 				DEVELOPMENT_TEAM = F56FBGAYRM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EventPlanner/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +471,7 @@
 				DEVELOPMENT_TEAM = F56FBGAYRM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EventPlanner/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
