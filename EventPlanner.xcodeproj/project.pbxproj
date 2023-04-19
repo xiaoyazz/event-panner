@@ -22,6 +22,8 @@
 		5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE8C29D94F1C001704F9 /* EventCreationViewController.swift */; };
 		5DC4DE9029D94F3D001704F9 /* EventHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */; };
 		5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE9129D94F4D001704F9 /* MapViewController.swift */; };
+		B270527F29EF6948000A416B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270527E29EF6948000A416B /* CoreLocation.framework */; };
+		B270528129EF6953000A416B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270528029EF6953000A416B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		5DC4DE8C29D94F1C001704F9 /* EventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCreationViewController.swift; sourceTree = "<group>"; };
 		5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHistoryViewController.swift; sourceTree = "<group>"; };
 		5DC4DE9129D94F4D001704F9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B270527E29EF6948000A416B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B270528029EF6953000A416B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B270528129EF6953000A416B /* MapKit.framework in Frameworks */,
+				B270527F29EF6948000A416B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 			children = (
 				5DC4DE5D29D947AF001704F9 /* EventPlanner */,
 				5DC4DE5C29D947AF001704F9 /* Products */,
+				B270527D29EF6948000A416B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +187,15 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B270527D29EF6948000A416B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B270528029EF6953000A416B /* MapKit.framework */,
+				B270527E29EF6948000A416B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +432,7 @@
 				DEVELOPMENT_TEAM = F56FBGAYRM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EventPlanner/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -444,6 +461,7 @@
 				DEVELOPMENT_TEAM = F56FBGAYRM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EventPlanner/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
