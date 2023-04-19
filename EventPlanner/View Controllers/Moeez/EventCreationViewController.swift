@@ -7,7 +7,23 @@
 
 import UIKit
 
-class EventCreationViewController: UIViewController {
+class EventCreationViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    let eventType = ["Birthday Party", "Graduation", "Baby & Kids", "Wedding", "Holiday", "Party", "Sports", "Organizations", "Celebrations", "Anniversary"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return eventType.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return eventType[row]
+    }
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

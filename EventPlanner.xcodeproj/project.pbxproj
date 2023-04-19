@@ -30,6 +30,10 @@
 		B3B75E8829EFAE3F00997F49 /* sparkle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8429EFAE3F00997F49 /* sparkle.jpg */; };
 		B3B75E8929EFAE3F00997F49 /* flamingo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8529EFAE3F00997F49 /* flamingo.jpg */; };
 		B3B75E8A29EFAE3F00997F49 /* wine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8629EFAE3F00997F49 /* wine.jpg */; };
+		B3B75E8C29F04FA600997F49 /* eventdb.sql in Resources */ = {isa = PBXBuildFile; fileRef = B3B75E8B29F04FA600997F49 /* eventdb.sql */; };
+		B3B75E8E29F0505100997F49 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B75E8D29F0505100997F49 /* Event.swift */; };
+		B3B75E9129F064DC00997F49 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B75E8F29F064C700997F49 /* libsqlite3.0.tbd */; };
+		B3B75E9229F064DC00997F49 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B75E9029F064C700997F49 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		B3B75E8429EFAE3F00997F49 /* sparkle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sparkle.jpg; sourceTree = "<group>"; };
 		B3B75E8529EFAE3F00997F49 /* flamingo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flamingo.jpg; sourceTree = "<group>"; };
 		B3B75E8629EFAE3F00997F49 /* wine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wine.jpg; sourceTree = "<group>"; };
+		B3B75E8B29F04FA600997F49 /* eventdb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = eventdb.sql; sourceTree = "<group>"; };
+		B3B75E8D29F0505100997F49 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B3B75E8F29F064C700997F49 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B3B75E9029F064C700997F49 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,8 @@
 			files = (
 				B270528129EF6953000A416B /* MapKit.framework in Frameworks */,
 				B270527F29EF6948000A416B /* CoreLocation.framework in Frameworks */,
+				B3B75E9229F064DC00997F49 /* libsqlite3.tbd in Frameworks */,
+				B3B75E9129F064DC00997F49 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +121,7 @@
 			children = (
 				5DC4DE5E29D947AF001704F9 /* AppDelegate.swift */,
 				5DC4DE6029D947AF001704F9 /* SceneDelegate.swift */,
+				B3B75E8D29F0505100997F49 /* Event.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 		5DC4DE7429D94865001704F9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				B3B75E8B29F04FA600997F49 /* eventdb.sql */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -210,6 +222,8 @@
 		B270527D29EF6948000A416B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3B75E8F29F064C700997F49 /* libsqlite3.0.tbd */,
+				B3B75E9029F064C700997F49 /* libsqlite3.tbd */,
 				B270528029EF6953000A416B /* MapKit.framework */,
 				B270527E29EF6948000A416B /* CoreLocation.framework */,
 			);
@@ -277,6 +291,7 @@
 				B3B75E8929EFAE3F00997F49 /* flamingo.jpg in Resources */,
 				B3B75E8229EF9B9900997F49 /* party_image.jpg in Resources */,
 				B3B75E8729EFAE3F00997F49 /* coco.jpg in Resources */,
+				B3B75E8C29F04FA600997F49 /* eventdb.sql in Resources */,
 				5DC4DE6B29D947B1001704F9 /* LaunchScreen.storyboard in Resources */,
 				B3B75E8A29EFAE3F00997F49 /* wine.jpg in Resources */,
 				B3B75E8829EFAE3F00997F49 /* sparkle.jpg in Resources */,
@@ -305,6 +320,7 @@
 				5DC4DE6129D947AF001704F9 /* SceneDelegate.swift in Sources */,
 				5DC4DE8B29D94F03001704F9 /* ProfileViewController.swift in Sources */,
 				5DC4DE8629D94EB0001704F9 /* HomeViewController.swift in Sources */,
+				B3B75E8E29F0505100997F49 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
