@@ -126,13 +126,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYL-vI-fQJ">
-                                <rect key="frame" x="127" y="611" width="136" height="67"/>
+                                <rect key="frame" x="112" y="530" width="136" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Maps"/>
                                 <connections>
                                     <segue destination="R5l-Ni-XEB" kind="presentation" id="WfX-qX-cPX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQS-x8-ZDW">
+                                <rect key="frame" x="95" y="605" width="184" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Today's Weather">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="E3S-BB-MW1" kind="presentation" id="i78-oH-VAL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,7 +254,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SM-14-MUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="k4T-fb-GjT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3205" y="1455"/>
+            <point key="canvasLocation" x="3204" y="1546"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="KgN-TY-HOI">
+            <objects>
+                <viewController id="E3S-BB-MW1" customClass="WeatherViewController" customModule="EventPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjB-HV-JhO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-NT-hOF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Weather" id="wt1-Fm-bjg">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qUY-SA-FqG">
+                                            <connections>
+                                                <segue destination="PAn-fU-iL2" kind="unwind" unwindAction="unwindToEventHistoryViewControllerWithSender:" id="3kl-8P-Ygf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ytJ-hP-O1s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COY-e4-l0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PAn-fU-iL2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4025" y="1530"/>
         </scene>
         <!--Home-->
         <scene sceneID="Y6n-lr-IrG">

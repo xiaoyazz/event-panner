@@ -24,6 +24,7 @@
 		5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4DE9129D94F4D001704F9 /* MapViewController.swift */; };
 		B270527F29EF6948000A416B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270527E29EF6948000A416B /* CoreLocation.framework */; };
 		B270528129EF6953000A416B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B270528029EF6953000A416B /* MapKit.framework */; };
+		B270528329EF8C9F000A416B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270528229EF8C9F000A416B /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5DC4DE9129D94F4D001704F9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B270527E29EF6948000A416B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B270528029EF6953000A416B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B270528229EF8C9F000A416B /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				5DC4DE8F29D94F3D001704F9 /* EventHistoryViewController.swift */,
 				5DC4DE9129D94F4D001704F9 /* MapViewController.swift */,
+				B270528229EF8C9F000A416B /* WeatherViewController.swift */,
 			);
 			path = Xiaoya;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC4DE9229D94F4D001704F9 /* MapViewController.swift in Sources */,
+				B270528329EF8C9F000A416B /* WeatherViewController.swift in Sources */,
 				5DC4DE8D29D94F1C001704F9 /* EventCreationViewController.swift in Sources */,
 				5DC4DE8029D94E2D001704F9 /* LoginViewController.swift in Sources */,
 				5DC4DE8829D94EC9001704F9 /* EventDetailsViewController.swift in Sources */,
