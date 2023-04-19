@@ -21,12 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let documentPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         
-        let documentDir = documentPaths[0]
-        eventDatabasePath = documentDir.appending("/" + eventDatabaseName!)
+        let documentEventDir = documentPaths[0]
+        eventDatabasePath = documentEventDir.appending("/" + eventDatabaseName!)
+        readEventDataFromDatabase()
+        checkAndCreateEventDatabase()
+        
         return true
     }
     
-    func readDataFromDatabase(){
+    func readEventDataFromDatabase(){
         events.removeAll()
         
         var db : OpaquePointer? = nil
